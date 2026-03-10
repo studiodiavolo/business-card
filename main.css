@@ -50,7 +50,6 @@ body {
 }
 .back-content {
     position: absolute;
-    inset: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -62,18 +61,23 @@ body {
     text-align: center;
     padding-top: 110px;
 }
+.back-content a {
+    color: #E7DFDD;
+    text-decoration: none;
+}
 .logo {
     position:absolute;
-    top: 80px;
+    top: 130px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px;
+    width: 100px;
 }
 .name-logo {
     position:absolute;
-    top: 150px;
-    width: 100%;
-    text-align: center;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
 }
 .role {
     position:absolute;
@@ -82,24 +86,25 @@ body {
     text-align: center;
     color: #E7DFDD;
     font-size: 18px;
+    margin: 0;
 }
 .email {
     position:absolute;
     top: 230px;
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
     color: #E7DFDD;
     font-size: 14px;
+    text-decoration: none;
 }
 .portfolio-site {
     position:absolute;
     top: 260px;
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    color: #E7DFDD;
+    font-size: 14px;
     text-align: center;
+    text-decoration: none;
 }
 .social-links {
   position: absolute;
@@ -113,7 +118,7 @@ body {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background-color: #E7DFDD;
+    background-color: #7dcfb6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,5 +127,12 @@ body {
 .icon {
     width: 20px;
     height: 20px;
-    
+    color: #0b090a;
+}
+
+.email a:visited, .portfolio-site a:visited {
+    color: #E7DFDD;
+}
+.email a:hover, .portfolio-site a:hover {
+    color: #7dcfb6;
 }
