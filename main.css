@@ -14,13 +14,17 @@ body {
     width: 340px;
     aspect-ratio: 2894 / 5665;
     perspective: 1000px;
+    border-radius: 18px;
+    overflow: hidden;
 }
 .card-inner-flip {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s;
+    transition: transform 0.8s ease;
     transform-style: preserve-3d;
+    will-change: transform;
+    border-radius: 18px;
 }
 .card-flip:hover .card-inner-flip {
     transform: rotateY(180deg);
@@ -32,12 +36,19 @@ body {
     height: 100%;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
+    will-change: transform;
+    border-radius: 18px;
 }
 .card-front img, .back-frame{
     width: 100%;
     height: 100%;
     object-fit: contain;
     display: block;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 18px;
 }
 .card-back {
     transform: rotateY(180deg);
