@@ -204,7 +204,7 @@ body::after {
     pointer-events: none;
 }
 .card-flip {
-    width: 340px;
+    width: min(340px, 85vw);
     aspect-ratio: 2894 / 5665;
     perspective: 1000px;
     border-radius: 18px;
@@ -339,4 +339,11 @@ body::after {
 }
 .email a:hover, .portfolio-site a:hover {
     color: #7dcfb6;
+}
+@media (max-width: 600px) {
+
+    .card-flip{
+        width: 85vw;
+    }
+
 }
