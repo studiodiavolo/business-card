@@ -253,15 +253,6 @@ body::after {
     display: block;
     border-radius: 18px;
 }
-.card-back {
-    transform: rotateY(180deg);
-}
-.back-frame {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .back-content {
     position: absolute;
     top: 0;
