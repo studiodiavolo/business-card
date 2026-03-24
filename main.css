@@ -222,7 +222,7 @@ body::after {
 .card-flip:hover, .card-inner-flip {
     transform: rotateY(180deg);
 }
-.card-front .card-back {
+.card-front, .card-back {
     position: absolute;
     inset: 0;
     width: 100%;
