@@ -207,40 +207,50 @@ body::after {
     width: min(340px, 85vw);
     aspect-ratio: 2894 / 5665;
     perspective: 1000px;
+    -webkit-perspective: 1000px;
     border-radius: 18px;
-    overflow: hidden;
 }
+
 .card-inner-flip {
     position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.8s ease;
+    -webkit-transition: -webkit-transform 0.8s ease;
     transform-style: preserve-3d;
-    will-change: transform;
+    -webkit-transform-style: preserve-3d;
     border-radius: 18px;
 }
-.card-flip:hover, .card-inner-flip {
+
+.card-flip:hover .card-inner-flip {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
-.card-front, .card-back {
+
+.card-front,
+.card-back {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    transform-style: preserve-3d;
-    will-change: transform;
     border-radius: 18px;
+    overflow: hidden;
 }
-.card-front img, .back-frame{
+
+.card-back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.card-front img,
+.back-frame {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    object-position: center;
     display: block;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     border-radius: 18px;
 }
 .card-back {
