@@ -233,7 +233,7 @@ body::after {
     will-change: transform;
     border-radius: 18px;
 }
-.card-front img .back-frame{
+.card-front img, .back-frame{
     width: 100%;
     height: 100%;
     object-fit: contain;
