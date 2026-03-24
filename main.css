@@ -219,7 +219,7 @@ body::after {
     will-change: transform;
     border-radius: 18px;
 }
-.card-flip:hover, .card-inner-flip {
+.card-flip:hover .card-inner-flip {
     transform: rotateY(180deg);
 }
 .card-front, .card-back {
